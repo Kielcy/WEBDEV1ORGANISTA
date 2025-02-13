@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page - Get in touch with me">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contact - My Website</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="contact" class="contact-section">
+            <h1>Contact Me</h1>
+            
+            <div class="contact-form-container">
+                <form action="message.html" method="GET" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            placeholder="Enter your name"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="Enter your email"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="4" 
+                            required 
+                            placeholder="Type your message here"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+
+            <div class="location-section">
+                <h2>My Location</h2>
+                <div class="location-image">
+                    <img 
+                        src="https://scontent.xx.fbcdn.net/v/t1.15752-9/475243516_1428317734795802_1015189382093196640_n.png?stp=dst-png_s720x720&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=oMqRGyFPmasQ7kNvgE5J_hE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH8vP0eqLXDcYsOc-pVNXCwmGA_t31KTaXsWmJmlIABsg&oe=67C982C7" 
+                        alt="F.E. Junk Shop, Bacsil, Bacnotan, La Union"
+                        class="location-img"
+                    />
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

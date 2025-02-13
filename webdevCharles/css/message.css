@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 100px;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+/* Sections */
+section {
+    margin: 150px auto;
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(214, 52, 11, 0.1);
+}
+
+h1 {
+    color: #0d0d0e;
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f58c04;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #fb79ad;
+}

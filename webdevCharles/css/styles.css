@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b; /* Coral color for hover effect */
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ff6b6b; /* Coral border */
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+#about {
+    background-color: #2d2d2d; /* Dark card background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#about h1 {
+    color: #ff6b6b; /* Coral heading */
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #e0e0e0; /* Light text */
+}
+
+#about p:last-child {
+    margin-bottom: 0;
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #ff6b6b; /* Coral highlight */
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #about {
+        padding: 20px;
+    }
+
+    #about h1 {
+        font-size: 32px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #2d2d2d; /* Dark card background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444; /* Subtle border for rows */
+}
+
+table th {
+    background-color: #ff6b6b; /* Coral header */
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+table td {
+    color: #e0e0e0; /* Light text */
+}
+
+table tbody tr:hover {
+    background-color: #3a3a3a; /* Hover effect for rows */
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+    }
+}
