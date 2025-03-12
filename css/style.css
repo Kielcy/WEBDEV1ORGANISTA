@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0B0C10; /* Deep black for shadow theme */
+    color: #C0C0C0; /* Silver for text clarity */
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #1A1A2E; /* Darker shade for the main card */
+    padding: 20px;
+    box-shadow: 0 0 20px #00FFFF; /* Electric blue glow for a magical aura */
+    border-radius: 15px; /* Smooth, modern corners */
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5CE1E6; /* Light cyan for futuristic feel */
+}
+
+.header h1 {
+    margin: 0;
+    color: #00FFFF; /* System-inspired neon blue */
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px; 
+    border: 3px solid #6A0DAD; /* Purple to represent magical energy */
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    background: linear-gradient(90deg, #4C1F60, #6A0DAD); /* Gradient purple for dark magic */
+    color: #FFFFFF; /* Bright white for contrast */
+    padding: 10px;
+    margin: 0 -20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #5CE1E6; /* Light cyan for System power */
+    color: #0B0C10; /* Black text for high contrast */
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00FFFF; /* Neon glow for magical prowess */
+}
+
+.contact {
+    text-align: center;
+    color: #5CE1E6; /* Cyan for a futuristic glow */
+}
+
+.contact a {
+    color: #00FFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-shadow: 0 0 10px #5CE1E6; /* Glow effect on hover */
+}
