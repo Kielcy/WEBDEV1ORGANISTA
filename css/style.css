@@ -1,0 +1,82 @@
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1a1423;
+  color: #d3b8ff; 
+}
+
+header {
+  background: #3a2558; 
+  color: #b488ff; 
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+img {
+  display: block;
+  margin: 80px auto 10px;
+  border-radius: 50%;
+  border: 10px solid #1a1423; 
+  width: 190px;
+  height: 190px;
+  margin-bottom: -100px;
+}
+
+main {
+  margin: 0 auto 50px;
+  padding: 100px 20px 20px;
+  background: #2b1c3d; 
+  max-width: 1000px;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+  background: #32aefa; 
+  padding: 10px;
+  font-size: 18px;
+  color: #010003; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul > li {
+  display: inline-block;
+  background: #b528a7; 
+  color: #f3f3f3; 
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  width: 200px;
+}
+
+.profile, .contact {
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.about, .experience, .projects {
+  text-align: left;
+}
+
+.email {
+  color: #ff4c4c; 
+}
+h1 {
+  color: #00aee8;
+}
