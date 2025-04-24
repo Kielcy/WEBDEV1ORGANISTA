@@ -1,0 +1,290 @@
+:root {
+    --primary: #4158d0;
+    --primary-glow: #6a78fa;
+    --secondary: #2c3a8c;
+    --dark: #111827;
+    --darker: #0a0c11;
+    --light: #e2e8f0;
+    --danger: #e11d48;
+    --danger-glow: #fb7185;
+    --success: #10b981;
+    --success-glow: #34d399;
+    --header-bg: #0f172a;
+    --border-glow: rgba(99, 102, 241, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--darker);
+    color: var(--light);
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(10, 12, 17, 0.95), rgba(17, 24, 39, 0.95)), 
+        url('https://i.pinimg.com/originals/3c/6c/8e/3c6c8e99a9fb634a8c05b962ae74acb8.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(65, 88, 208, 0.3);
+    overflow: hidden;
+    border: 1px solid rgba(65, 88, 208, 0.3);
+}
+
+header {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary);
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-glow), transparent);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px var(--primary-glow);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.input-container {
+    padding: 25px;
+    background-color: rgba(17, 24, 39, 0.5);
+    border-bottom: 1px solid rgba(65, 88, 208, 0.3);
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--primary-glow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(65, 88, 208, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(65, 88, 208, 0.3), 0 0 15px rgba(65, 88, 208, 0.3);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+button {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(65, 88, 208, 0.4);
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(65, 88, 208, 0.5);
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+.utang-list {
+    padding: 25px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--primary);
+    color: white;
+    text-shadow: 0 0 8px var(--primary-glow);
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-glow), transparent);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(65, 88, 208, 0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(15, 23, 42, 0.5);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(65, 88, 208, 0.3);
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.amount {
+    font-weight: 700;
+    color: var(--danger);
+    text-shadow: 0 0 5px var(--danger-glow);
+    font-size: 17px;
+}
+
+.empty-list {
+    text-align: center;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    border: 1px dashed rgba(65, 88, 208, 0.3);
+    border-radius: 5px;
+    background-color: rgba(15, 23, 42, 0.3);
+}
+
+.error {
+    color: var(--danger);
+    margin-top: 8px;
+    font-size: 14px;
+    text-shadow: 0 0 3px var(--danger-glow);
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--header-bg);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    border-top: 1px solid rgba(65, 88, 208, 0.3);
+}
+
+/* Create the leveling gauge effect for the button */
+.button-wrapper {
+    position: relative;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.button-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-glow), transparent);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* Make the scrollbar match the theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--darker);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-glow);
+}
